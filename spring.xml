@@ -1,0 +1,21 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+<bean id="point" class = "com.sonal.Shape_class.Point">
+<property name = "x" value="1"></property>
+<property name = "y" value="2"></property>
+
+</bean>
+
+<bean id="triangle" class = "com.sonal.Shape_class.Triangle">
+<property name = "type" value="scalene"></property>
+<property name="p1" ref="point"></property>
+</bean>
+
+<bean id="circle" class = "com.sonal.Shape_class.Circle"/>
+
+
+
+</beans>
